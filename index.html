@@ -4,9 +4,8 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>AR ToTasks</title>
-    <link href="index.CSS" rel="stylesheet">
+    <title>GeoAR.js demo</title>
+    <link href="stylesheet.css" rel="stylesheet">
     <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
     <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
@@ -29,24 +28,26 @@
         }
         </script>
 </head>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 
 <body style='margin: 0; overflow: hidden;'>
+
     <link rel="stylesheet" href="stylesheet.css">
 
-    <div class="container">
-        <section class="left">
-            <a href="#" class="previous round">&#8249;</a>
-        </section>
+        <div class="container">
+            <section class="left">
+                <a href="#" class="previous round">&#8249;</a>
+            </section>
 
-        <section class="middle">
-        <h1 class="text">Hello, I'm Jay! I'll be your Guide around the city as you complete tasks!</h1>
-        </section>
+            <section class="middle">
+            <h1 class="text">Hello, I'm Jay! I'll be your Guide around the city as you complete tasks!</h1>
+            </section>
 
-        <section class="right">
-            <a href="#" class="next round">&#8250;</a>
-        </section>
+            <section class="right">
+                <a href="#" class="next round">&#8250;</a>
+            </section>
 
-    </div>
+        </div>
 
     <a-scene
         vr-mode-ui="enabled: false"

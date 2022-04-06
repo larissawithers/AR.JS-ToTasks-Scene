@@ -3,12 +3,13 @@ body {
 }
 
 .container {
+    margin: 50px;
     background-color: #0700677b;
     border-radius: 25px;
     padding: 20px;
     align-items: center;
     display: grid;
-	grid-template-areas: "left middle middle middle middle right";
+	grid-template-areas: "left middle middle right";
 }
 
 .left{
@@ -26,7 +27,7 @@ body {
 
 .text {
     margin: 30px;
-    font-size: 100;
+    font-size: 20px;
     color: white;
 }
 
