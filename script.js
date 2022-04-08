@@ -17,4 +17,5 @@
             div.innerHTML = "The User have denied the request for Geolocation.";
         }
       }
+      
       getLocation();
