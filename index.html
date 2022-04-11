@@ -17,32 +17,17 @@
         
         </script>
 </head>
-
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 
 <body style='margin: 0; overflow: hidden;'>
 
-    <link rel="stylesheet" href="stylesheet.css">
-
-        <div class="container">
-            <section class="left">
-                <a href="#" class="previous round">&#8249;</a>
-            </section>
-
-            <section class="middle">
-            <h1 class="text">Hello, I'm Jay! I'll be your Guide around the city as you complete tasks!</h1>
-            </section>
-
-            <section class="right">
-                <a href="#" class="next round">&#8250;</a>
-            </section>
-
-        </div>
+    
 
     <a-scene
         vr-mode-ui="enabled: false"
 		embedded
-        arjs='sourceType: webcam; debugUIEnabled: false;'>
-        <a-entity gltf-model="./assets/Jay3DModel.gltf" rotation="0 0 0" scale="0.5 0.5 2" position="0 0.5 -20" gps-entity-place= getLocation(); animation-mixer/>
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+        <a-entity gltf-model="./assets/Jay3DModel.gltf" rotation="0 90 0" scale="0.5 0.5 2" position="0 0.5 -20" gps-entity-place= getLocation(); animation-mixer/>
         
         <a-camera gps-camera rotation-reader position="0 1 -20"></a-camera>
 	</a-scene>
