@@ -14,29 +14,8 @@
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
     <script>
-        var div  = document.getElementById("location");
-      function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition, showError);
-        } else {
-          div.innerHTML = "The Browser Does not Support Geolocation";
-        }
-      }
-
-      function showPosition(position) {
-        div.innerHTML = "Latitude: " + position.coords.latitude + 0.00000000000001 + "<br>Longitude: " + position.coords.longitude;
-      }
-
-      function showError(error) {
-        if(error.PERMISSION_DENIED){
-            div.innerHTML = "The User have denied the request for Geolocation.";
-        }
-      }
-
-      getLocation();
     </script>
 </head>
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 
 <body style='margin: 0; overflow: hidden;'>
 
@@ -46,7 +25,7 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-entity gltf-model="./assets/Jay3DModel.gltf"; rotation="0 0 0"; scale="0.5 0.5 2"; position="0 0.5 -20"; gps-entity-place= getLocation(); animation-mixer/>
+        <a-entity gltf-model="./assets/Jay3DModel.gltf"; rotation="0 0 0"; scale="0.5 0.5 2"; position="0 0.5 -20"; animation-mixer/>
         
         <a-camera gps-camera rotation-reader position="0 1 -20"></a-camera>
 	</a-scene>
