@@ -9,7 +9,7 @@
       }
 
       function showPosition(position) {
-        div.innerHTML = "Latitude: " + position.coords.latitude + 0.00000000000005 + "<br>Longitude: " + position.coords.longitude;
+        div.innerHTML = "Latitude: " + position.coords.latitude + 0.00000000000001 + "<br>Longitude: " + position.coords.longitude;
       }
 
       function showError(error) {
